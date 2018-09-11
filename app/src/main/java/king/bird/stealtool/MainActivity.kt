@@ -3,6 +3,7 @@ package king.bird.stealtool
 import android.app.Activity
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import king.bird.tool.StealUtils
 import kotlinx.android.synthetic.main.activity_main.*
@@ -16,7 +17,7 @@ import kotlinx.android.synthetic.main.activity_main.*
  *     version: 1.0
  * </pre>
  */
-class MainActivity : Activity() {
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
