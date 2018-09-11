@@ -55,5 +55,7 @@ class MainActivity : AppCompatActivity() {
             StealUtils.getInstallApp(packageManager)
                     .map { it }.forEach { Log.e("mBtnGetApp", it.toString()) }
         }
+
+
     }
 }

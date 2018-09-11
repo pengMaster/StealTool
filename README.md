@@ -126,6 +126,8 @@ java (getPackageManager()) = kotlin (packageManager)
 
 ####  申请一个权限：
 ```
+PERMISSION_CAMERA = 申请权限（例如：Manifest.permission.READ_SMS）
+REQUEST_CODE_CAMERA = 请求返回码 重写onRequestPermissionsResult()时用
     PermissionUtils.checkAndRequestPermission(mContext, PERMISSION_CAMERA, REQUEST_CODE_CAMERA,
                 new PermissionUtils.PermissionRequestSuccessCallBack() {
             @Override
@@ -164,6 +166,7 @@ if(PermissionUtils.isPermissionRequestSuccess(grantResults))
 于是，引申出了复杂版的权限申请方法：
 ## 自定义权限申请：
 ```
+PERMISSION_CAMERA = 申请权限（例如：Manifest.permission.READ_SMS）
 PermissionUtils.checkPermission(mContext, PERMISSION_CAMERA,
                 new PermissionUtils.PermissionCheckCallBack() {
             @Override
