@@ -128,7 +128,8 @@ java (getPackageManager()) = kotlin (packageManager)
 ```
 PERMISSION_CAMERA = 申请权限（例如：Manifest.permission.READ_SMS）
 REQUEST_CODE_CAMERA = 请求返回码 重写onRequestPermissionsResult()时用
-    PermissionUtils.checkAndRequestPermission(mContext, PERMISSION_CAMERA, REQUEST_CODE_CAMERA,
+
+PermissionUtils.checkAndRequestPermission(mContext, PERMISSION_CAMERA, REQUEST_CODE_CAMERA,
                 new PermissionUtils.PermissionRequestSuccessCallBack() {
             @Override
             public void onHasPermission() {
