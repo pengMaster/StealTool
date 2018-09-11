@@ -1,6 +1,7 @@
 package king.bird.stealtool
 
 import android.app.Activity
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -50,12 +51,15 @@ class MainActivity : AppCompatActivity() {
                     .map { it }.forEach { Log.e("mBtnGetCallLog", it.toString()) }
         }
 
-        // /获取安装所有App
+        // 获取安装所有App
         mBtnGetApp.setOnClickListener {
             StealUtils.getInstallApp(packageManager)
                     .map { it }.forEach { Log.e("mBtnGetApp", it.toString()) }
         }
 
 
-    }
+        mBtnGotoPermission.setOnClickListener {
+            startActivity(Intent(applicationContext,PermissionActivity::class.java)) }
+        }
+
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fadai.permissionutils.MainActivity"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_main_request_one_permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请一个权限"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/btn_main_request_permissions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请多个权限"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/btn_main_request_one_permission1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请一个权限(自定义）"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/btn_main_request_permissions1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请多个权限（自定义）"
+        android:onClick="onClick"/>
+
+
+</LinearLayout>
